@@ -1,6 +1,11 @@
 import ReviewsDAO from "../dao/reviewsDAO.js"
 
 export default class ReviewsController {
+  static async apiTest(req, res, next) {
+    console.log('in test method apiTest in reviews.controller.js')
+    res.send("testing test route in reviews.controller.js!")
+  }
+  
   static async apiPostReview(req, res, next) {
     try {
       const movieId = parseInt(req.body.movieId)
@@ -25,6 +30,7 @@ export default class ReviewsController {
   static async apiGetReview(req, res, next) {
     try {
       let id = req.params.id || {}
+      console.log(`Attempting to get review for ${id}`)
       let review = await ReviewsDAO.getReview(id)
       if (!review) {
         res.status(404).json({ error: "Not found" })

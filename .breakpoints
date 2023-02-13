@@ -1,0 +1,26 @@
+{
+  "files": {
+    "api/reviews.route.js": [
+      {
+        "id": "6f0bd318-ec1e-40ee-93ff-a3958edb47b8",
+        "line": 9,
+        "version": 420,
+        "index": 285
+      }
+    ],
+    "dao/reviewsDAO.js": [
+      {
+        "id": "a8c686f1-de99-4e0e-b98b-e4e8932110d0",
+        "line": 23,
+        "version": 136,
+        "index": 551
+      },
+      {
+        "id": "db4288c8-3a8e-47e7-b3b9-11175cd2c308",
+        "line": 28,
+        "version": 136,
+        "index": 655
+      }
+    ]
+  }
+}

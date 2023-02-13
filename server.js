@@ -7,7 +7,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-app.use("/app/v1/reviews", reviews)
+app.use("/api/v1/reviews", reviews)
 app.use("*", (req, res) => res.status(404).json({error: "not found (default route server.js)"}))
   
 export default app
